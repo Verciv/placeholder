@@ -1,3 +1,20 @@
+/* Grid Visualizer */
+/* Numbers stand for values in grid-column/grid-row */
+/*  1_______2_______3_______4_______5
+1   |_______|_______|_______|_______|
+2   |_______|_______|_______|_______|
+3   |_______|_______|_______|_______|
+4   |_______|_______|_______|_______|
+5   |_______|_______|_______|_______|
+6   |_______|_______|_______|_______|
+*/
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+
 .container {
     background-color: #000000;  /* Changes background color */
     display: grid;  /* Displays as grid */
@@ -11,13 +28,13 @@
 }
 
 .containerItemOne {
+    background-color: #ff0000;
     grid-column-start: 1;
     grid-column-end: 3;
-    background-color: #008080;
 }
 
 .containerItemTwo {
-    background-color: #008080;
+    background-color: #ff66ff;
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 1;
@@ -25,7 +42,7 @@
 }
 
 .containerItemThree {
-    background-color: #008080;
+    background-color: #9933ff;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
@@ -33,7 +50,7 @@
 }
 
 .containerItemFour {
-    background-color: #008080;
+    background-color: #3366ff;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -41,22 +58,22 @@
 }
 
 .containerItemFive {
-    background-color: #008080;
+    background-color: #ff9933;
     grid-area: auto;
 }
 
 .containerItemSix {
-    background-color: #008080;
+    background-color: #ffff00;
     grid-area: auto;
 }
 
 .containerItemSeven {
-    background-color: #008080;
+    background-color: 	#33ffff;
     grid-area:auto;
 }
 
 .containerItemEight {
-    background-color: #008080;
+    background-color: #3300cc;
     grid-column-start: 4;
     grid-column-end: 5; 
     grid-row-start: 2;
@@ -64,29 +81,25 @@
 }
 
 .containerItemNine {
-    background-color: #008080;
-    grid-column-start: auto;
-    grid-column-end: auto;
+    background-color: #00cc00;
     grid-row-start: 4;
     grid-row-end: 6; 
 }
 
 .containerItemTen {
-    background-color: #008080;
+    background-color: #ff3300;
     grid-area: auto;
 }
 
 .containerItemEleven {
-    background-color: #008080;
+    background-color: #0033ff;
     grid-column-start: 3;
     grid-column-end: 5;
 }
 
 .containerItemTwelve {
-    background-color: #008080;
+    background-color: #ffffff;
     grid-column-start: 2;
     grid-column-end: 4;
-    grid-row-start: auto;
-    grid-row-end: auto;
 }
 
