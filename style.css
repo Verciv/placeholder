@@ -1,0 +1,74 @@
+.container {
+    background-color: #000000;  /* Changes background color */
+    display: grid;  /* Displays as grid */
+    grid-template-columns: auto auto auto auto; /* Column sizes are equal to each other */
+    gap: 10px;  /* Adjusts the gap between each gridlet */
+    height: 650px;
+}
+
+.containerItem {
+    background-color: #008080;
+}
+
+.containerItemOne {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #008080;
+}
+
+.containerItemTwo {
+    background-color: #008080;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3; 
+}
+
+.containerItemThree {
+    background-color: #008080;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.containerItemFour {
+    background-color: #008080;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-start: 2;
+}
+
+.containerItemFive {
+    background-color: #008080;
+}
+
+.containerItemSix {
+    background-color: #008080;
+}
+
+.containerItemSeven {
+    background-color: #008080;
+}
+
+.containerItemEight {
+    background-color: #008080;
+}
+
+.containerItemNine {
+    background-color: #008080;
+}
+
+.containerItemTen {
+    background-color: #008080;
+}
+
+.containerItemEleven {
+    background-color: #008080;
+}
+
+.containerItemTwelve {
+    background-color: #008080;
+}
+
