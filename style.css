@@ -1,5 +1,5 @@
 /* Grid Visualizer */
-/* Numbers stand for values in grid-column/grid-row */
+/* Position Values */
 /*  1_______2_______3_______4_______5
 1   |_______|_______|_______|_______|
 2   |_______|_______|_______|_______|
@@ -9,97 +9,106 @@
 6   |_______|_______|_______|_______|
 */
 
+/* Fallbacks */
 h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
 }
 
+div {
+    background-color: #ffffff; /* For background */
+    color: #000000; /* For text */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Default fonts */
+}
 
+/* For the containing div */
 .container {
     background-color: #000000;  /* Changes background color */
     display: grid;  /* Displays as grid */
     grid-template-columns: auto auto auto auto; /* Sizes are equal to each other */
     gap: 10px;  /* Adjusts the gap between each gridlet */
-    height: 650px;
-}
-
-.containerItem {
-    background-color: #008080;
+    height: 650px; /* Adjusts the height of the whole div */
 }
 
 .containerItemOne {
-    background-color: #ff0000;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    background-color: #ff0000; /* Change background color */
+    grid-column-start: 1; /* Display column starting from position x */
+    grid-column-end: 3; /* Stop displaying column at position x */
 }
 
 .containerItemTwo {
-    background-color: #ff66ff;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 3; 
+    background-color: #ff66ff; /* Change background color */
+    grid-column-start: 3; /* Display column starting from position x */
+    grid-column-end: 4; /* Stop displaying column at position x */
+    grid-row-start: 1; /* Display row starting from position x */
+    grid-row-end: 3; /* Stop displaying row at position x */
 }
 
 .containerItemThree {
-    background-color: #9933ff;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 4;
+    background-color: #9933ff; /* Change background color */
+    grid-column-start: 2; /* Display column starting from position x */
+    grid-column-end: 3; /* Stop displaying column at position x */
+    grid-row-start: 2; /* Display row starting from position x */
+    grid-row-end: 4; /* Stop displaying row at position x */
 }
 
 .containerItemFour {
-    background-color: #3366ff;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-start: 2;
+    background-color: #3366ff; /* Change background color */
+    grid-column-start: 1; /* Display column starting from position x */
+    grid-column-end: 2; /* Stop displaying column at position x */
+    grid-row-start: 1; /* Display row starting from position x */
+    grid-row-start: 2; /* Stop displaying row at position x */
 }
 
 .containerItemFive {
-    background-color: #ff9933;
-    grid-area: auto;
+    background-color: #ff9933; /* Change background color */
+    grid-area: auto; /* Fallback, does not affect grid dimensions */
 }
 
 .containerItemSix {
-    background-color: #ffff00;
-    grid-area: auto;
+    background-color: #ffff00; /* Change background color */
+    grid-area: auto; /* Fallback, does not affect grid dimensions */
 }
 
 .containerItemSeven {
-    background-color: 	#33ffff;
-    grid-area:auto;
+    background-color: 	#33ffff; /* Change background color */
+    grid-area:auto; /* Fallback, does not affect grid dimensions */
 }
 
 .containerItemEight {
-    background-color: #3300cc;
-    grid-column-start: 4;
-    grid-column-end: 5; 
-    grid-row-start: 2;
-    grid-row-end: 4;
+    background-color: #3300cc; /* Change background color */
+    grid-column-start: 4; /* Display column starting from position x */
+    grid-column-end: 5; /* Stop displaying column at position x */
+    grid-row-start: 2; /* Display row starting from position x */
+    grid-row-end: 4; /* Stop displaying row at position x */
 }
 
 .containerItemNine {
-    background-color: #00cc00;
+    background-color: #00cc00; /* Change background color */
+    grid-column-start: auto; /* Fallback, does not affect grid dimensions */
+    grid-column-end: auto; /* Fallback, does not affect grid dimensions */
     grid-row-start: 4;
     grid-row-end: 6; 
 }
 
 .containerItemTen {
     background-color: #ff3300;
-    grid-area: auto;
+    grid-area: auto; /* Fallback, does not affect grid dimensions */
 }
 
 .containerItemEleven {
     background-color: #0033ff;
-    grid-column-start: 3;
-    grid-column-end: 5;
+    grid-column-start: 3; /* Display column starting from position x */
+    grid-column-end: 5; /* Stop displaying column at position x */
+    grid-row-start: auto; /* Fallback, does not affect grid dimensions */
+    grid-row-end: auto; /* Fallback, does not affect grid dimensions */
 }
 
 .containerItemTwelve {
     background-color: #ffffff;
-    grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-start: 2; /* Display column starting from position x */
+    grid-column-end: 4; /* Stop displaying column at position x */
+    grid-row-start: auto; /* Fallback, does not affect grid dimensions */
+    grid-row-end: auto; /* Fallback, does not affect grid dimensions */
 }
 
