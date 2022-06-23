@@ -1,7 +1,7 @@
 .container {
     background-color: #000000;  /* Changes background color */
     display: grid;  /* Displays as grid */
-    grid-template-columns: auto auto auto auto; /* Column sizes are equal to each other */
+    grid-template-columns: auto auto auto auto; /* Sizes are equal to each other */
     gap: 10px;  /* Adjusts the gap between each gridlet */
     height: 650px;
 }
@@ -42,33 +42,51 @@
 
 .containerItemFive {
     background-color: #008080;
+    grid-area: auto;
 }
 
 .containerItemSix {
     background-color: #008080;
+    grid-area: auto;
 }
 
 .containerItemSeven {
     background-color: #008080;
+    grid-area:auto;
 }
 
 .containerItemEight {
     background-color: #008080;
+    grid-column-start: 4;
+    grid-column-end: 5; 
+    grid-row-start: 2;
+    grid-row-end: 4;
 }
 
 .containerItemNine {
     background-color: #008080;
+    grid-column-start: auto;
+    grid-column-end: auto;
+    grid-row-start: 4;
+    grid-row-end: 6; 
 }
 
 .containerItemTen {
     background-color: #008080;
+    grid-area: auto;
 }
 
 .containerItemEleven {
     background-color: #008080;
+    grid-column-start: 3;
+    grid-column-end: 5;
 }
 
 .containerItemTwelve {
     background-color: #008080;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: auto;
+    grid-row-end: auto;
 }
 
