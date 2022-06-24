@@ -21,6 +21,16 @@ div {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Default fonts */
 }
 
+/* For the navigation bar */
+.navBar {
+    background-color: #ffffff;
+    color: #000000;
+    display: grid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: end;
+    
+}
+
 /* For the containing div */
 .container {
     background-color: #000000;  /* Changes background color */
@@ -45,7 +55,7 @@ div {
 }
 
 .containerItemThree {
-    background-color: #9933ff; /* Change background color */
+    background-image: url("./assets/futune.png"); /* Change background color */
     grid-column-start: 2; /* Display column starting from position x */
     grid-column-end: 3; /* Stop displaying column at position x */
     grid-row-start: 2; /* Display row starting from position x */
