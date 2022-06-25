@@ -21,16 +21,6 @@ div {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Default fonts */
 }
 
-/* For the navigation bar */
-.navBar {
-    background-color: #ffffff;
-    color: #000000;
-    display: grid;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    justify-content: end;
-    
-}
-
 /* For the containing div */
 .container {
     background-color: #000000;  /* Changes background color */
@@ -41,13 +31,13 @@ div {
 }
 
 .containerItemOne {
-    background-image: url("./assets/futune.png"); /* Change background color */
+    background-color: #ff0000; /* Change background color */
     grid-column-start: 1; /* Display column starting from position x */
     grid-column-end: 3; /* Stop displaying column at position x */
 }
 
 .containerItemTwo {
-    background-image: url("./assets/futune.png"); /* Change background color */
+    background-color: #ff66ff; /* Change background color */
     grid-column-start: 3; /* Display column starting from position x */
     grid-column-end: 4; /* Stop displaying column at position x */
     grid-row-start: 1; /* Display row starting from position x */
@@ -55,7 +45,7 @@ div {
 }
 
 .containerItemThree {
-    background-image: url("./assets/futune.png"); /* Change background color */
+    background-color: #9933ff; /* Change background color */
     grid-column-start: 2; /* Display column starting from position x */
     grid-column-end: 3; /* Stop displaying column at position x */
     grid-row-start: 2; /* Display row starting from position x */
@@ -63,7 +53,7 @@ div {
 }
 
 .containerItemFour {
-    background-image: url("./assets/futune.png"); /* Change background color */
+    background-color: #3366ff; /* Change background color */
     grid-column-start: 1; /* Display column starting from position x */
     grid-column-end: 2; /* Stop displaying column at position x */
     grid-row-start: 1; /* Display row starting from position x */
@@ -71,22 +61,22 @@ div {
 }
 
 .containerItemFive {
-    background-image: url("./assets/futune.png"); /* Change background color */
+    background-color: #ff9933; /* Change background color */
     grid-area: auto; /* Fallback, does not affect grid dimensions */
 }
 
 .containerItemSix {
-    background-image: url("./assets/futune.png"); /* Change background color */
+    background-color: #ffff00; /* Change background color */
     grid-area: auto; /* Fallback, does not affect grid dimensions */
 }
 
 .containerItemSeven {
-    background-image: url("./assets/futune.png"); /* Change background color */
+    background-color: 	#33ffff; /* Change background color */
     grid-area:auto; /* Fallback, does not affect grid dimensions */
 }
 
 .containerItemEight {
-    background-image: url("./assets/futune.png"); /* Change background color */
+    background-color: #3300cc; /* Change background color */
     grid-column-start: 4; /* Display column starting from position x */
     grid-column-end: 5; /* Stop displaying column at position x */
     grid-row-start: 2; /* Display row starting from position x */
@@ -94,7 +84,7 @@ div {
 }
 
 .containerItemNine {
-    background-image: url("./assets/futune.png"); /* Change background color */
+    background-color: #00cc00; /* Change background color */
     grid-column-start: auto; /* Fallback, does not affect grid dimensions */
     grid-column-end: auto; /* Fallback, does not affect grid dimensions */
     grid-row-start: 4;
@@ -102,12 +92,12 @@ div {
 }
 
 .containerItemTen {
-    background-image: url("./assets/futune.png"); /* Change background color */
+    background-color: #ff3300;
     grid-area: auto; /* Fallback, does not affect grid dimensions */
 }
 
 .containerItemEleven {
-    background-image: url("./assets/futune.png"); /* Change background color */
+    background-color: #0033ff;
     grid-column-start: 3; /* Display column starting from position x */
     grid-column-end: 5; /* Stop displaying column at position x */
     grid-row-start: auto; /* Fallback, does not affect grid dimensions */
@@ -115,10 +105,9 @@ div {
 }
 
 .containerItemTwelve {
-    background-image: url("./assets/futune.png"); /* Change background color */
+    background-color: #ffffff;
     grid-column-start: 2; /* Display column starting from position x */
     grid-column-end: 4; /* Stop displaying column at position x */
     grid-row-start: auto; /* Fallback, does not affect grid dimensions */
     grid-row-end: auto; /* Fallback, does not affect grid dimensions */
 }
-
