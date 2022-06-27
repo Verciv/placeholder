@@ -1,0 +1,231 @@
+/* Grid Visualizer */
+/* Position Values */
+/*  1_______2_______3_______4_______5
+1   |_______|_______|_______|_______|
+2   |_______|_______|_______|_______|
+3   |_______|_______|_______|_______|
+4   |_______|_______|_______|_______|
+5   |_______|_______|_______|_______|
+6   |_______|_______|_______|_______|
+*/
+
+/* x% = The percentage of distance from the parent element's margins */
+
+/* Fallbacks */
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Default fonts */
+    text-align: center; /* Align text */
+}
+
+div {
+    background-color: #ffffff; /* For background */
+    color: #000000; /* For text */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Default fonts */
+}
+
+span {
+    color: #000000; /* For text */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Default fonts */
+    font-size: 36px; /* Font size */
+}
+
+/* For the nav bar */
+.navBar {
+    background-color: #ffffff; /* For background */
+    color: #000000; /* For text */
+    display: grid; /* Display as a grid */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Default fonts */
+    font-size: 16px; /* Font size */
+    justify-content: end; /* Shifts spacing to right */
+}
+
+
+/* For the containing div */
+.container {
+    background-color: #000000;  /* Changes background color */
+    display: grid;  /* Displays as grid */
+    grid-template-columns: 1fr 3fr 2fr 3fr; /* Sizes are equal to each other */
+    gap: 10px;  /* Adjusts the gap between each gridlet */
+    height: 650px; /* Adjusts the height of the whole div */
+}
+
+.containerItemOne {
+    background-color: #ff0000; /* Change background color */
+    grid-column-start: 1; /* Display column starting from position x */
+    grid-column-end: 3; /* Stop displaying column at position x */
+    grid-row-start: 1; /* Display row starting from position x */
+    grid-row-end: 2; /* Stop displaying row at position x */
+    position: relative; /* Sets child element positions to be relative to the parent element */
+}
+
+.containerItemTwo {
+    background-color: #ff66ff; /* Change background color */
+    grid-column-start: 3; /* Display column starting from position x */
+    grid-column-end: 4; /* Stop displaying column at position x */
+    grid-row-start: 1; /* Display row starting from position x */
+    grid-row-end: 3; /* Stop displaying row at position x */
+    position: relative; /* Sets child element positions to be relative to the parent element */
+}
+
+.containerItemThree {
+    background-color: #9933ff; /* Change background color */
+    grid-column-start: 2; /* Display column starting from position x */
+    grid-column-end: 3; /* Stop displaying column at position x */
+    grid-row-start: 2; /* Display row starting from position x */
+    grid-row-end: 4; /* Stop displaying row at position x */
+    position: relative; /* Sets child element positions to be relative to the parent element */
+}
+
+.containerItemFour {
+    background-color: #3366ff; /* Change background color */
+    grid-column-start: 1; /* Display column starting from position x */
+    grid-column-end: 2; /* Stop displaying column at position x */
+    grid-row-start: 1; /* Display row starting from position x */
+    grid-row-start: 2; /* Stop displaying row at position x */
+    position: relative; /* Sets child element positions to be relative to the parent element */
+}
+
+.containerItemFive {
+    background-color: #ff9933; /* Change background color */
+    grid-area: auto; /* Fallback, does not affect grid dimensions */
+    position: relative; /* Sets child element positions to be relative to the parent element */
+}
+
+.containerItemSix {
+    background-color: #ffff00; /* Change background color */
+    grid-area: auto; /* Fallback, does not affect grid dimensions */
+    position: relative; /* Sets child element positions to be relative to the parent element */
+}
+
+.containerItemSeven {
+    background-color: 	#33ffff; /* Change background color */
+    grid-area:auto; /* Fallback, does not affect grid dimensions */
+    position: relative; /* Sets child element positions to be relative to the parent element */
+}
+
+.containerItemEight {
+    background-color: #3300cc; /* Change background color */
+    grid-column-start: 4; /* Display column starting from position x */
+    grid-column-end: 5; /* Stop displaying column at position x */
+    grid-row-start: 2; /* Display row starting from position x */
+    grid-row-end: 4; /* Stop displaying row at position x */
+    position: relative; /* Sets child element positions to be relative to the parent element */
+}
+
+.containerItemNine {
+    background-color: #00cc00; /* Change background color */
+    grid-column-start: auto; /* Fallback, does not affect grid dimensions */
+    grid-column-end: auto; /* Fallback, does not affect grid dimensions */
+    grid-row-start: 4; /* Display row starting from position x */
+    grid-row-end: 6; /* Stop displaying row at position x */
+    position: relative; /* Sets child element positions to be relative to the parent element */
+}
+
+.containerItemTen {
+    background-color: #ff3300; /* Change background color */
+    grid-area: auto; /* Fallback, does not affect grid dimensions */
+    position: relative; /* Sets child element positions to be relative to the parent element */
+}
+
+.containerItemEleven {
+    background-color: #0033ff; /* Change background color */
+    grid-column-start: 3; /* Display column starting from position x */
+    grid-column-end: 5; /* Stop displaying column at position x */
+    grid-row-start: auto; /* Fallback, does not affect grid dimensions */
+    grid-row-end: auto; /* Fallback, does not affect grid dimensions */
+    position: relative; /* Sets child element positions to be relative to the parent element */
+}
+
+.containerItemTwelve {
+    background-color: #ffffff; /* Change background color */
+    grid-column-start: 2; /* Display column starting from position x */
+    grid-column-end: 4; /* Stop displaying column at position x */
+    grid-row-start: auto; /* Fallback, does not affect grid dimensions */
+    grid-row-end: auto; /* Fallback, does not affect grid dimensions */
+    position: relative; /* Sets child element positions to be relative to the parent element */
+}
+
+/* For span text inside the divs */
+.spanTextOne {
+    position: absolute; /* Position is fixed to the parent element */
+    left: 50%; /* Margin is 50% away from the parent's left side of content box */
+    top: 50%; /* Margin is 50% away from the parent's top side of content box */
+    transform: translate(-50%, -50%); /* Offset by -50% of the parent box to the left and to the top */
+}
+
+.spanTextTwo {
+    position: absolute; /* Position is fixed to the parent element */
+    left: 50%; /* Margin is 50% away from the parent's left side of content box */
+    top: 50%; /* Margin is 50% away from the parent's top side of content box */
+    transform: translate(-50%, -50%); /* Offset by -50% of the parent box to the left and to the top */
+}
+
+.spanTextThree {
+    position: absolute; /* Position is fixed to the parent element */
+    left: 50%; /* Margin is 50% away from the parent's left side of content box */
+    top: 50%; /* Margin is 50% away from the parent's top side of content box */
+    transform: translate(-50%, -50%); /* Offset by -50% of the parent box to the left and to the top */
+}
+
+.spanTextFour {
+    position: absolute; /* Position is fixed to the parent element */
+    right: 100%; /* Margin is 100% away from the parent's left side of content box */
+    top: 50%; /* Margin is 50% away from the parent's top side of content box */
+    transform: translate(100%, -50%); /* Offset by 100% of the parent box to the right and -50% to the top */
+}
+
+.spanTextFive {
+    position: absolute; /* Position is fixed to the parent element */
+    left: 50%; /* Margin is 50% away from the parent's left side of content box */
+    top: 0%; /* Margin is 0% away from the parent's top side of content box */
+    transform: translate(-50%, 0%); /* Offset by -50% of the parent box to the left and 0% to the top */
+}
+
+.spanTextSix {
+    position: absolute; /* Position is fixed to the parent element */
+    right: 100%; /* Margin is 100% away from the parent's left side of content box */
+    top: 50%; /* Margin is 50% away from the parent's top side of content box */
+    transform: translate(100%, -50%); /* Offset by 100% of the parent box to the right and -50% to the top */
+}
+
+.spanTextSeven {
+    position: absolute; /* Position is fixed to the parent element */
+    left: 50%; /* Margin is 50% away from the parent's left side of content box */
+    top: 50%; /* Margin is 50% away from the parent's top side of content box */
+    transform: translate(-50%, -50%); /* Offset by -50% of the parent box to the left and to the top */
+}
+
+.spanTextEight {
+    position: absolute; /* Position is fixed to the parent element */
+    left: 50%; /* Margin is 50% away from the parent's left side of content box */
+    top: 50%; /* Margin is 50% away from the parent's top side of content box */
+    transform: translate(-50%, -50%); /* Offset by -50% of the parent box to the left and to the top */
+}
+
+.spanTextNine {
+    position: absolute; /* Position is fixed to the parent element */
+    left: 50%; /* Margin is 50% away from the parent's left side of content box */
+    top: 100%; /* Margin is 100% away from the parent's top side of content box */
+    transform: translate(-50%, -100%); /* Offset by -50% of the parent box to the left and -100% to the top */
+}
+
+.spanTextTen {
+    position: absolute; /* Position is fixed to the parent element */
+    left: 50%; /* Margin is 50% away from the parent's left side of content box */
+    top: 100%; /* Margin is 100% away from the parent's top side of content box */
+    transform: translate(-50%, -100%); /* Offset by -50% of the parent box to the left and -100% to the top */
+}
+
+.spanTextEleven {
+    position: absolute; /* Position is fixed to the parent element */
+    left: 100%; /* Margin is 100% away from the parent's left side of content box */
+    top: 50%; /* Margin is 50% away from the parent's top side of content box */
+    transform: translate(-100%, -50%); /* Offset by -100% of the parent box to the right and -50% to the top */
+}
+
+.spanTextTwelve {
+    position: absolute; /* Position is fixed to the parent element */
+    left: 100%; /* Margin is 100% away from the parent's left side of content box */
+    top: 50%; /* Margin is 50% away from the parent's top side of content box */
+    transform: translate(-100%, -50%); /* Offset by -100% of the parent box to the right and -50% to the top */
+}

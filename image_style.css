@@ -9,6 +9,11 @@
 6   |_______|_______|_______|_______|
 */
 
+/* Image Formatting */
+/* 
+imagename-column-row.extension (subtract 1 from numeric values)
+*/
+
 /* Fallbacks */
 h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -33,10 +38,12 @@ div {
 /* For the containing div */
 .container {
     background-color: #000000;  /* Changes background color */
+    
     display: grid;  /* Displays as grid */
-    grid-template-columns: repeat (4, 5fr); /* Sizes are equal to each other */
+    grid-template-columns: auto; /* Sizes are equal to each other */
     gap: 1px;  /* Adjusts the gap between each gridlet */
     height: 760px; /* Adjusts the height of the whole div */
+    width: 1000px; /* Adjusts the width of the whole div */
 }
 
 .containerItemOne {
